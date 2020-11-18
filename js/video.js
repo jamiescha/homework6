@@ -69,11 +69,11 @@ document.querySelector("#skip").addEventListener("click",function(){
 
 
 document.querySelector("#old").addEventListener("click",function(){
-	video.class.add("oldTime")
+	video.classList.add("oldTime")
 
 });
 
 document.querySelector("#original").addEventListener("click",function(){
-	video.class.remove("oldTime")
+	video.classList.remove("oldTime")
 
 });
