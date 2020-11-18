@@ -43,10 +43,13 @@ document.querySelector("#volumeSlider").addEventListener("change", function() {
 document.querySelector("#mute").addEventListener("click",function(){
 	console.log("Mute");
 	if (video.muted == true){
-		video.muted=false
+		video.muted=false;
+		this.innerHTML = "Mute"
 	}
 	
-	else {video.muted =true}
+	
+	else {video.muted =true;
+	this.innerHTML = "Unmute"}
 
 	console.log(video.muted)
 
@@ -65,12 +68,12 @@ document.querySelector("#skip").addEventListener("click",function(){
 });
 
 
-document.querySelector("old").addEventListener("click",function(){
+document.querySelector("#old").addEventListener("click",function(){
 	video.class.add("oldTime")
 
 });
 
-document.querySelector("original").addEventListener("click",function(){
+document.querySelector("#original").addEventListener("click",function(){
 	video.class.remove("oldTime")
 
 });
